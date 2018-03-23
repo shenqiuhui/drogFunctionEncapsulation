@@ -1,0 +1,15 @@
+#box1,
+#box2 {
+    width: 100px;
+    height: 100px;
+}
+
+#box1 {
+    background-color: hotpink;
+    transform: translateX(50px);
+}
+
+#box2 {
+    background-color: greenyellow;
+    transform: translateX(150px);
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>兼容移动端和PC端的拖拽功能封装</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/drag.js"></script>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <script>
+        // 案例
+        var boxDom_1 = document.querySelector('#box1');
+        var boxDom_2 = document.querySelector('#box2');
+        var boxObj_1 = new Drag(box1);
+        var boxObj_2 = new Drag(box2);
+        console.log(boxObj_1); // Drag {elem: div#box1, startX: 0, startY: 0, sourceX: 0, sourceY: 0}
+        console.log(boxObj_2); // Drag {elem: div#box2, startX: 0, startY: 0, sourceX: 0, sourceY: 0}
+    </script>
+</body>
+</html>
