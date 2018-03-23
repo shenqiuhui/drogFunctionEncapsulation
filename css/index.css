@@ -2,6 +2,7 @@
 #box2 {
     width: 100px;
     height: 100px;
+    position: absolute;
 }
 
 #box1 {
@@ -11,5 +12,5 @@
 
 #box2 {
     background-color: greenyellow;
-    transform: translateX(150px);
+    transform: translateX(200px);
 }
