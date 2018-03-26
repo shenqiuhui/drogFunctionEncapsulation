@@ -128,6 +128,7 @@
             this.elem.addEventListener(eventNames.down, start, false);
 
             function start(event) {
+                var event = event || window.event;
                 var pos = _this.getPosition();
 
                 _this.startX = isMobile ? event.targetTouches[0].pageX : event.pageX;
@@ -140,6 +141,7 @@
             }
 
             function move(event) {
+                var event = event || window.event;
                 var currentX = isMobile ? event.targetTouches[0].pageX : event.pageX;
                 var currentY = isMobile ? event.targetTouches[0].pageY : event.pageY;
 
